@@ -14,12 +14,10 @@ vim.keymap.set("n", "*", "*zz", { desc = "Center screen when going to next searc
 vim.keymap.set("n", "#", "#zz", { desc = "Center screen when going to previous search result under cursor" })
 vim.keymap.set("n", "g*", "g*zz", { desc = "Center screen when going to next search result under cursor" })
 vim.keymap.set("n", "g#", "g#zz", { desc = "Center screen when going to previous search result under cursor" })
-vim.keymap.set("n", "t", "tzz", { desc = "Center screen when going until next search result" })
-vim.keymap.set("n", "T", "Tzz", { desc = "Center screen when going until previous search result" })
 
 -- Remap ESC key in different modes
-vim.keymap.set({ "i", "v", "c" }, "kj", "<ESC>", { desc = "Escape when in insert mode" })
-vim.keymap.set({ "i", "v", "c" }, "<C-c>", "<ESC>", { desc = "Escape when in insert mode" })
+vim.keymap.set({ "i", "v" }, "kj", "<ESC>", { desc = "Escape when in insert mode" })
+vim.keymap.set({ "i", "v" }, "<C-c>", "<ESC>", { desc = "Escape when in insert mode" })
 
 vim.keymap.set("n", "Q", "@qj")
 vim.keymap.set("x", "Q", ":norm @q<CR>")
